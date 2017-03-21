@@ -35,7 +35,7 @@ public class PlayGameScript : MonoBehaviour {
 
 
     /// <summary>
-    /// 업적 공개 / 해제 => 한번에
+    /// 업적 공개 / 해제
     /// </summary>
     public void OnClickRevealingUnlocking() {
         Social.ReportProgress(GPGSIds.achievement_test1, 100.0f, (bool success) => { });
