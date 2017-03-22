@@ -63,7 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\02.Scripts\BGBox.cs" />
+    <Compile Include="Assets\02.Scripts\CubeMove.cs" />
     <Compile Include="Assets\02.Scripts\PlayGameScript.cs" />
+    <Compile Include="Assets\02.Scripts\StayBox.cs" />
     <Compile Include="Assets\GPGSIds.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />

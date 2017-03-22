@@ -95,8 +95,20 @@ public class PlayGameScript : MonoBehaviour {
     }
 
     #region Saved Games
-
- 
+    
+    /// <summary>
+    /// 저장된 게임열기
+    /// </summary>
+    /// <param name="fileName"></param>
+    void OpenSaveGame(string fileName) {
+        ISavedGameClient saveGameClient = PlayGamesPlatform.Instance.SavedGame;
+        saveGameClient.OpenWithAutomaticConflictResolution(fileName, DataSource.ReadCacheOrNetwork, 
+            ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
+    }
+    public void OnSavedGameOpened(SavedGameRequestStatus status, ISavedGameMetadata game) {
+        if (status == SavedGameRequestStatus.Success) { } else { }
+    }
+    
 
 
     #endregion /Saved Games
